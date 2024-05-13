@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lease cars</title>
+    <!-- JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- STYLE -->
     <link rel="stylesheet" href="../stylesheet/index/style.css" />
     <link rel="stylesheet" href="../stylesheet/between/reset.css" />
@@ -17,10 +22,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header header__main">
         <div class="container">
           <nav class="header__inner">
-            <a href="pages/index.html" class="header__logo">
+            <a href="index.html" class="header__logo">
               <img
                 src="../img/between-img/logo.svg"
                 alt="logo lease car"
@@ -29,9 +34,7 @@
             </a>
             <ul class="header__list">
               <li class="header__list__item">
-                <a href="pages/new-car.html" class="header__list__link"
-                  >NEW CARS</a
-                >
+                <a href="new-car.html" class="header__list__link">NEW CARS</a>
               </li>
               <li class="header__list__item">
                 <a href="#" class="header__list__link">PRE-OWNED CARS</a>
@@ -49,7 +52,53 @@
           </nav>
         </div>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="top">
+          <div class="container">
+            <h1 class="title">Leasing From D&M</h1>
+            <a href="#" class="top__link">FIND A CAR</a>
+          </div>
+        </section>
+        <div class="slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car1.jpeg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car2.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car3.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car4.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car1.jpeg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car2.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car3.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(../img/index-img/bg__car4.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </main>
       <footer class="footer">
         <div class="container">
           <nav class="footer__menu">
@@ -161,5 +210,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/index/index.js"></script>
   </body>
 </html>
