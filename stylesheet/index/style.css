@@ -66,3 +66,104 @@
   background-size: cover;
   background-position: center center;
 }
+.why-lease {
+  margin: 150px 0;
+}
+.why-lease__title {
+  text-align: center;
+  font-size: var(--font-size-title);
+  font-weight: 700;
+}
+.why-lease__list {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.why-lease__list__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 270px;
+  gap: 30px;
+}
+.why-lease__list__title {
+  order: 2;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.why-lease__list__box__img {
+  order: 1;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.why-lease__list__text {
+  order: 3;
+  font-size: var(--font-size);
+}
+.how-does {
+  margin-bottom: 150px;
+}
+.how-does__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.how-does__title {
+  text-transform: capitalize;
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.how-does__text {
+  font-size: var(--font-size);
+  margin: 50px 0;
+}
+.how-does__title_down {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.how-does__list {
+  margin: 50px 0 70px auto;
+  counter-reset: myCounter;
+  max-width: 510px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.how-does__list__item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blue);
+  color: #fff;
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.how-does__list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.how__does__list__text {
+  max-width: 290px;
+  font-size: var(--font-size);
+}
+.how__does__text_down {
+  font-size: var(--font-size);
+  text-align: left;
+  font-weight: 120%;
+}
