@@ -30,8 +30,7 @@
 .slider {
   position: relative;
   margin: 0 auto;
-  max-width: 1920px;
-  max-height: 1080px;
+  max-height: 2000px;
 }
 .swiper-pagination {
   position: absolute;
@@ -59,8 +58,7 @@
 }
 .swiper-slide {
   height: 100vh;
-  max-width: 1920px;
-  max-height: 1080px;
+  max-height: 2000px;
   top: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,4 +164,53 @@
   font-size: var(--font-size);
   text-align: left;
   font-weight: 120%;
+}
+.index__video {
+  margin-bottom: 150px;
+}
+.video__title {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.video__strong {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.video__content {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.inport {
+  margin-bottom: 150px;
+}
+.inport__title {
+  font-size: var(--font-size-title);
+  font-weight: 700;
+}
+.inport__text {
+  font-size: var(--font-size);
+  margin: 20px 0 50px 0;
+}
+.inport__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.inport__item {
+  height: 230px;
+}
+.inport__list__img {
+  margin-bottom: 20px;
+}
+.inport__list__text {
+  display: inline;
+  margin-top: auto;
+  font-size: 1.6rem;
+  line-height: 120%;
 }
