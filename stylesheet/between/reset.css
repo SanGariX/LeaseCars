@@ -76,6 +76,9 @@
 .header__list--active {
   display: flex;
 }
+.header__list--active {
+  transform: translateY(0%) !important;
+}
 .header__list {
   display: flex;
   align-items: center;
@@ -238,9 +241,7 @@
     transition: all 0.3s 0.25s linear;
     z-index: -1;
   }
-  .header__list--active {
-    transform: translateY(0%);
-  }
+
   .header__list--active::before {
     background-color: #555555;
     filter: blur(100px);
