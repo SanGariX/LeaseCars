@@ -56,6 +56,26 @@
   padding-bottom: 45px;
   box-sizing: content-box;
 }
+.open__header__btn {
+  height: 25px;
+  aspect-ratio: 1.4/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+.open__header__btn :not(.linear__header__btn:nth-child(even)) {
+  background-color: #fff;
+}
+.linear__header__btn {
+  width: 100%;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: rgb(191, 191, 191);
+}
+.header__list--active {
+  display: flex;
+}
 .header__list {
   display: flex;
   align-items: center;
@@ -176,6 +196,139 @@
 .footer__copy-nav__link:hover {
   text-decoration: solid underline 1px #fff;
   text-underline-offset: 5px;
+}
+/* MEDIA */
+@media (max-width: 900px) {
+  .swiper-wrapper {
+    height: 1000px;
+  }
+  .header__inner {
+    align-items: center;
+  }
+  .header__logo {
+    order: 1;
+  }
+  .open__header__btn {
+    display: flex;
+    order: 2;
+  }
+  .header__list {
+    position: absolute;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    transform: translateY(-150%);
+    transition: transform 0.3s linear;
+  }
+  .header__list::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    transition: all 0.3s 0.25s linear;
+    z-index: -1;
+  }
+  .header__list--active {
+    transform: translateY(0%);
+  }
+  .header__list--active::before {
+    background-color: #555555;
+    filter: blur(100px);
+  }
+  .slider::after {
+    height: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .title {
+    font-size: 6rem;
+  }
+  .top__link {
+    font-size: 3rem;
+    text-wrap: nowrap;
+    padding: 0;
+    padding: 20px 50px;
+  }
+  .slider {
+    height: 1000px;
+  }
+  .footer__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(5px, 4vw, 40px);
+    text-align: center;
+  }
+  .swiper-pagination-bullet {
+    width: 60px;
+    margin: 0 5px !important;
+    margin-bottom: 20px !important;
+  }
+  .swiper-slide {
+    max-height: 1000px;
+  }
+  .footer .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 420px) {
+  .header__list {
+    padding: 10vw 15vw;
+    gap: 40px;
+  }
+  .header__list::before {
+    width: 100vw;
+    height: 100vw;
+  }
+  .header__list--active {
+    transform: translateY(0%);
+  }
+  .header__list--active::before {
+    background-color: #555555;
+    filter: blur(100px);
+  }
+  .why-lease__list {
+    grid-template-columns: 100vw;
+  }
+  .how-does__list__item::before {
+    height: 60px;
+    width: 60px;
+    font-size: 3.4rem;
+  }
+  .how-does__list__item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+  }
+  .how__does__list__text {
+    justify-self: end;
+  }
+  .inport__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .inport__item {
+    height: auto;
+    text-align: center;
+  }
+  .footer__menu {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    max-height: none;
+  }
+  .footer__apps {
+    flex-wrap: wrap;
+  }
 }
 /*________Обнулення________*/
 * {
