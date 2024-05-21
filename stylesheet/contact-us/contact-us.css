@@ -50,3 +50,11 @@
   margin: 63px auto 0;
   text-transform: uppercase;
 }
+@media (max-width: 560px) {
+  .contact__text {
+    padding: 0 2~0px;
+  }
+  .contact__input {
+    width: 100%;
+  }
+}
